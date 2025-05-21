@@ -557,14 +557,80 @@ hr {
 }
 
 @media (max-width: 600px) {
-    .slide-arrow.prev-arrow {
-        left: -8px;
+    .sliderku,
+    .IMG_0665,
+    .sliderku-portrait {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        min-width: 0 !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        overflow: visible !important;
+        display: block !important;
     }
+    .sliderku .slick-list,
+    .IMG_0665 .slick-list,
+    .sliderku-portrait .slick-list {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        min-width: 0 !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        overflow: visible !important;
+        display: block !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    .sliderku .slick-track,
+    .IMG_0665 .slick-track,
+    .sliderku-portrait .slick-track {
+        display: flex !important;
+        align-items: stretch !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        min-width: 0 !important;
+    }
+    .sliderku .slick-slide,
+    .IMG_0665 .slick-slide,
+    .sliderku-portrait .slick-slide {
+        width: 90vw !important;
+        max-width: 95vw !important;
+        min-width: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: stretch !important;
+    }
+    .sliderku img,
+    .IMG_0665 img,
+    .sliderku-portrait img {
+        width: 90vw !important;
+        max-width: 95vw !important;
+        min-width: 0 !important;
+        height: 54vw !important;
+        max-height: 70vw !important;
+        min-height: 120px !important;
+        object-fit: cover !important;
+        border-radius: 14px !important;
+        margin: 0 auto !important;
+        display: block !important;
+        background: #eee !important;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
+    }
+    .slick-dots {
+        bottom: -18px !important;
+    }
+    .slide-arrow.prev-arrow,
     .slide-arrow.next-arrow {
-        right: -8px;
+        top: 40% !important;
+        width: 32px !important;
+        height: 32px !important;
+        z-index: 10 !important;
     }
-    .sliderku {
-        padding: 0 8px;
+    .slide-arrow svg {
+        width: 18px !important;
+        height: 18px !important;
     }
 }
 
@@ -896,69 +962,4 @@ hr {
         font-size: 2.2rem;
         height: 40px;
     }
-}
-
-@media (max-width: 600px) {
-  .sliderku,
-  .IMG_0665,
-  .sliderku-portrait {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    min-width: 0 !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    overflow: visible !important;
-  }
-  .sliderku .slick-list,
-  .IMG_0665 .slick-list,
-  .sliderku-portrait .slick-list {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    min-width: 0 !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    overflow: visible !important;
-  }
-  .sliderku .slick-slide,
-  .IMG_0665 .slick-slide,
-  .sliderku-portrait .slick-slide {
-    width: 92vw !important;
-    max-width: 96vw !important;
-    min-width: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    display: flex !important;
-    justify-content: center !important;
-  }
-  .sliderku img,
-  .IMG_0665 img,
-  .sliderku-portrait img {
-    width: 92vw !important;
-    max-width: 96vw !important;
-    min-width: 0 !important;
-    height: 54vw !important;
-    max-height: 70vw !important;
-    min-height: 120px !important;
-    object-fit: cover !important;
-    border-radius: 14px !important;
-    margin: 0 auto !important;
-    display: block !important;
-    background: #eee !important;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
-  }
-  .slick-dots {
-    bottom: -18px !important;
-  }
-  .slide-arrow.prev-arrow,
-  .slide-arrow.next-arrow {
-    top: 40% !important;
-    width: 32px !important;
-    height: 32px !important;
-    z-index: 10 !important;
-  }
-  .slide-arrow svg {
-    width: 18px !important;
-    height: 18px !important;
-  }
 }
