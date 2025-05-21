@@ -87,7 +87,6 @@ window.sliderData = [
         'foto3/IMG_0468.jpg',
         'foto3/IMG_0665.jpg'
     ],
-    // Data slider untuk halaman pricelist
     [
         'foto4/1.jpg',
         'foto4/2.jpg',
