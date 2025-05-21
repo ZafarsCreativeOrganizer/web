@@ -1147,7 +1147,7 @@ hr {
   .footer-main { font-size: 0.9em !important; }
   .highlights-section, .about-section { margin: 8px 0 12px 0 !important; padding: 6px 2vw 6px 2vw !important; }
   .footer-chat img {
-    width: 44px !important;
+    width: 160px !important;
     height: auto !important;
   }
 }
@@ -1156,7 +1156,7 @@ hr {
   .hero { height: 34vh !important; }
   .sliderku img, .IMG_0665 img, .sliderku-portrait img { height: 30vw !important; }
   .footer-chat img {
-    width: 54px !important;
+    width: 180px !important;
     height: auto !important;
   }
 }
@@ -1166,7 +1166,7 @@ hr {
   .sliderku img, .IMG_0665 img, .sliderku-portrait img { max-width: 80vw !important; }
   .highlights-section, .about-section { margin: 16px 0 22px 0 !important; padding: 10px 4vw 10px 4vw !important; }
   .footer-chat img {
-    width: 54px !important;
+    width: 180px !important;
     height: auto !important;
   }
 }
@@ -1229,6 +1229,10 @@ hr {
     width: 100vw !important;
     text-align: center !important;
     top: 0 !important;
+  }
+  .footer-chat {
+    bottom: 110px !important;
+    right: 16px !important;
   }
 }
 @media (min-width: 1025px) {
