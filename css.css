@@ -1249,3 +1249,14 @@ button, .contactus-form button[type="submit"] {
     display: none !important;
   }
 }
+
+@media (max-width: 1024px) {
+  .desktop-nav, #navbar {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) {
+  .desktop-nav, #navbar {
+    display: flex !important;
+  }
+}
