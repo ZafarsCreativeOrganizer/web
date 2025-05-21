@@ -710,8 +710,27 @@ hr {
 }
 @media (max-width: 600px) {
     .IMG_0665 img {
-        width: 80px;
-        height: 120px;
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin: 0 auto;
+        display: block;
+    }
+    .slide-arrow.prev-arrow {
+        left: -4px;
+    }
+    .slide-arrow.next-arrow {
+        right: -4px;
+    }
+    .slide-arrow.prev-arrow,
+    .slide-arrow.next-arrow {
+        width: 28px;
+        height: 28px;
+    }
+    .slide-arrow svg {
+        width: 14px;
+        height: 14px;
     }
 }
 
