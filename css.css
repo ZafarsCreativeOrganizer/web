@@ -1195,6 +1195,17 @@ hr {
     font-weight: 500;
     color: #666;
   }
+  .logo {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+    position: fixed !important;
+    z-index: 101 !important;
+    width: 100vw !important;
+    text-align: center !important;
+    top: 0 !important;
+  }
 }
 @media (min-width: 1025px) {
   .slide-arrow,
