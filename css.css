@@ -897,3 +897,47 @@ hr {
         height: 40px;
     }
 }
+
+@media (max-width: 600px) {
+  .sliderku,
+  .IMG_0665,
+  .sliderku-portrait {
+    padding: 0 2vw !important;
+  }
+  .sliderku img,
+  .IMG_0665 img,
+  .sliderku-portrait img {
+    width: 60vw !important;
+    max-width: 95vw !important;
+    min-width: 120px !important;
+    height: 38vw !important;
+    max-height: 60vw !important;
+    min-height: 100px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #eee;
+  }
+  .sliderku .slick-slide,
+  .IMG_0665 .slick-slide,
+  .sliderku-portrait .slick-slide {
+    padding: 0 4px !important;
+  }
+  .slide-arrow.prev-arrow {
+    left: 0 !important;
+  }
+  .slide-arrow.next-arrow {
+    right: 0 !important;
+  }
+  .slide-arrow.prev-arrow,
+  .slide-arrow.next-arrow {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .slide-arrow svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}
