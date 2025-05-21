@@ -432,10 +432,12 @@ hr {
 
 .sliderku img {
     width: 100%;
-    height: 280px;
+    height: auto;
+    max-height: 280px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #eee;
 }
 .slick-arrow {
     display: flex !important;
@@ -560,6 +562,7 @@ hr {
     .desktop-nav, #navbar {
         display: none !important;
     }
+    
     .bottom-nav {
         display: flex !important;
         position: fixed;
@@ -575,33 +578,17 @@ hr {
         align-items: center;
         padding: 0;
     }
-    .bottom-nav-item {
-        flex: 1;
-        text-align: center;
-        color: #444;
-        text-decoration: none;
-        font-size: 0.85em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 4px 0 0 0;
-        transition: color 0.2s;
+
+    .sliderku img,
+    .IMG_0665 img,
+    .sliderku-portrait img {
+        width: 92vw !important;
+        max-width: 96vw !important;
+        height: 38vw !important;
+        max-height: 180px !important;
+        min-height: 120px !important;
     }
-    .bottom-nav-item:active,
-    .bottom-nav-item:focus {
-        color: #c94a6a;
-    }
-    .bottom-nav-icon {
-        font-size: 1.5em;
-        line-height: 1;
-        margin-bottom: 2px;
-        display: block;
-    }
-    .bottom-nav-label {
-        font-size: 0.75em;
-        display: block;
-    }
+
     .sliderku,
     .IMG_0665,
     .sliderku-portrait {
@@ -610,8 +597,8 @@ hr {
         margin: 0 auto !important;
         padding: 0 0 16px 0 !important;
         overflow: visible !important;
-        background: none !important;
     }
+
     .sliderku .slick-list,
     .IMG_0665 .slick-list,
     .sliderku-portrait .slick-list {
@@ -637,21 +624,6 @@ hr {
         display: flex !important;
         justify-content: center !important;
         align-items: stretch !important;
-    }
-    .sliderku img,
-    .IMG_0665 img,
-    .sliderku-portrait img {
-        width: 92vw !important;
-        max-width: 96vw !important;
-        height: 38vw !important;
-        max-height: 180px !important;
-        min-height: 120px !important;
-        object-fit: cover !important;
-        border-radius: 10px !important;
-        margin: 0 auto !important;
-        display: block !important;
-        background: #eee !important;
-        box-shadow: none !important;
     }
     .slick-dots {
         bottom: -18px !important;
@@ -1047,6 +1019,7 @@ hr {
     .desktop-nav, #navbar {
         display: flex !important;
     }
+    
     .bottom-nav {
         display: none !important;
     }
