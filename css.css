@@ -273,7 +273,7 @@ hr {
 .footer-chat {
     position: fixed;
     right: 32px;
-    bottom: 24px;
+    bottom: 100px;
     z-index: 999;
     transition: right 0.2s, bottom 0.2s;
 }
@@ -281,7 +281,7 @@ hr {
     width: 50px;
     height: auto;
     transition: width 0.2s;
-    filter: brightness(0) saturate(100%) invert(72%) sepia(77%) saturate(1042%) hue-rotate(86deg) brightness(101%) contrast(101%);
+    filter: none !important;
 }
 @media (max-width: 1100px) {
     .footer-desc {
@@ -1146,32 +1146,56 @@ hr {
   .sliderku img, .IMG_0665 img, .sliderku-portrait img { height: 26vw !important; min-height: 70px !important; }
   .footer-main { font-size: 0.9em !important; }
   .highlights-section, .about-section { margin: 8px 0 12px 0 !important; padding: 6px 2vw 6px 2vw !important; }
+  .footer-chat img {
+    width: 44px !important;
+    height: auto !important;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   html, body { font-size: 14px !important; }
   .hero { height: 34vh !important; }
   .sliderku img, .IMG_0665 img, .sliderku-portrait img { height: 30vw !important; }
+  .footer-chat img {
+    width: 54px !important;
+    height: auto !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   html, body { font-size: 16px !important; }
   .hero { height: 42vh !important; }
   .sliderku img, .IMG_0665 img, .sliderku-portrait img { max-width: 80vw !important; }
   .highlights-section, .about-section { margin: 16px 0 22px 0 !important; padding: 10px 4vw 10px 4vw !important; }
+  .footer-chat img {
+    width: 54px !important;
+    height: auto !important;
+  }
 }
 @media (min-width: 1025px) and (max-width: 1279px) {
   html, body { font-size: 17px !important; }
   .hero { height: 50vh !important; }
   .highlights-section, .about-section { margin: 22px 0 30px 0 !important; padding: 14px 8vw 14px 8vw !important; }
+  .footer-chat img {
+    width: 200px !important;
+    height: auto !important;
+  }
 }
 @media (min-width: 1280px) and (max-width: 1919px) {
   html, body { font-size: 18px !important; }
   .hero { height: 60vh !important; }
   .highlights-section, .about-section { margin: 32px 0 40px 0 !important; padding: 24px 12vw 24px 12vw !important; }
+  .footer-chat img {
+    width: 200px !important;
+    height: auto !important;
+  }
 }
 @media (min-width: 1920px) {
   html, body { font-size: 20px !important; }
   .hero { height: 60vh !important; }
   .highlights-section, .about-section { margin: 40px 0 60px 0 !important; padding: 32px 16vw 32px 16vw !important; }
+  .footer-chat img {
+    width: 200px !important;
+    height: auto !important;
+  }
 }
 
 @media (max-width: 1024px) {
