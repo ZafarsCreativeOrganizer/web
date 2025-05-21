@@ -1,0 +1,880 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    background: #fff;
+}
+.hero {
+    background: url('bglp.jpeg') center center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 70px;
+}
+.hero-title {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    color: #efd289 !important;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0.2px;
+    width: 100vw;
+    z-index: 100;
+    background: transparent;
+    padding: 25px 2cm 25px 0;
+    transition: background 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+nav.scrolled {
+    background: #222;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.05rem;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-weight: normal;
+    transition: color 0.2s;
+}
+nav.scrolled a {
+    color: #fff;
+}
+nav a:hover,
+nav.scrolled a:hover {
+    color: #4EE18E;
+    font-weight: bold;
+}
+.logo {
+    position: fixed;
+    top: 0;
+    left: 40px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 60px;
+    background: transparent;
+    transition: color 0.3s;
+}
+.logo img {
+    width: 40px;
+    margin-right: 8px;
+}
+.about-section {
+    background: #fff;
+    padding: 60px 20px 40px 20px;
+    text-align: center;
+}
+.about-title {
+    color: #efd289;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.about-text {
+    color: #222;
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.7;
+}
+hr {
+    border: none;
+    border-top: 2px solid #eee;
+    margin: 0 10%;
+}
+@media (max-width: 700px) {
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 1rem; }
+    nav {
+        padding: 8px 0;
+    }
+    .logo { left: 10px; }
+}
+
+/* Contact Page Custom Classes */
+.contact-info-title {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-size: 1.5em;
+    color: #432885;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.contact-table {
+    font-size: 1.15em;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    color: #222;
+    border-spacing: 0 10px;
+}
+.contact-table td {
+    padding: 0 10px 0 0;
+}
+.contact-table td.separator {
+    padding: 0 10px;
+}
+.contact-hours-table {
+    font-size: 1.2em;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    color: #23477b;
+    border-spacing: 0 10px;
+}
+.contact-hours-table td {
+    padding: 0 10px 0 0;
+}
+.contact-hours-table td.separator {
+    color: #222;
+    padding: 0 10px;
+}
+.contact-hours-table td.day {
+    font-weight: bold;
+}
+.contact-hours-table td.time {
+    color: #23477b;
+    font-weight: 500;
+}
+.contact-hours-table td.closed {
+    font-weight: 700;
+}
+.contact-section-wrapper {
+    margin: 60px auto 0 auto;
+    max-width: 900px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.contact-email {
+    font-size: 2em;
+    color: #432885;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.contact-email-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: invert(18%) sepia(41%) saturate(7472%) hue-rotate(243deg) brightness(90%) contrast(98%);
+}
+.contact-map {
+    margin-bottom: 40px;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+/* Footer Styles */
+.footer-main {
+    background: #f5f5f5;
+    margin-top: 60px;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    color: #666;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer-top {
+    padding: 40px 5vw 20px 5vw;
+    text-align: center;
+}
+.footer-social-title {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 18px;
+    font-weight: normal;
+}
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.footer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid #bdbdbd;
+    border-radius: 50%;
+    background: #fff;
+    transition: box-shadow 0.2s;
+}
+.footer-icon img {
+    width: 26px;
+    height: 26px;
+    filter: grayscale(1) brightness(0.5);
+}
+.footer-icon:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-color: #888;
+}
+.footer-group-title {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+}
+.footer-desc {
+    margin: 30px auto 0 auto;
+    max-width: 1100px;
+    font-size: 0.97em;
+    color: #888;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-weight: normal;
+}
+.footer-bottom {
+    background: #ecece7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6vw 18px 6vw;
+    font-size: 0.98em;
+    flex-wrap: wrap;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.footer-bottom > div {
+    margin: 4px 0;
+}
+.footer-policy a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 6px;
+    font-size: 0.98em;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-weight: normal;
+}
+.footer-policy a:hover {
+    color: #432885;
+}
+.footer-chat {
+    position: fixed;
+    right: 32px;
+    bottom: 24px;
+    z-index: 999;
+    transition: right 0.2s, bottom 0.2s;
+}
+.footer-chat img {
+    width: 50px;
+    height: auto;
+    transition: width 0.2s;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(77%) saturate(1042%) hue-rotate(86deg) brightness(101%) contrast(101%);
+}
+@media (max-width: 1100px) {
+    .footer-desc {
+        max-width: 95vw;
+        text-align: center;
+    }
+    .footer-top {
+        padding: 40px 2vw 20px 2vw;
+    }
+    .footer-bottom {
+        padding: 18px 2vw 18px 2vw;
+    }
+}
+@media (max-width: 900px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 18px 2vw 18px 2vw;
+    }
+    .footer-chat {
+        right: 16px;
+        bottom: 16px;
+    }
+    .footer-desc {
+        font-size: 0.95em;
+    }
+    .footer-chat img {
+        width: 42px;
+    }
+}
+@media (max-width: 600px) {
+    .footer-main {
+        font-size: 0.95em;
+    }
+    .footer-top {
+        padding: 30px 1vw 10px 1vw;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 6px;
+        padding: 12px 1vw 12px 1vw;
+        font-size: 0.93em;
+    }
+    .footer-desc {
+        font-size: 0.92em;
+        margin: 18px auto 0 auto;
+    }
+    .footer-social-icons {
+        gap: 14px;
+        margin-bottom: 18px;
+    }
+    .footer-chat {
+        right: 8px;
+        bottom: 8vw;
+    }
+    .footer-chat img {
+        width: 34px;
+    }
+}
+
+/* Highlights Section */
+.highlights-section {
+    margin: 40px 200px 60px 200px;
+    text-align: left;
+    padding: 0 3vw;
+}
+.highlights-title {
+    font-size: 2rem;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 18px;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.slider-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+    gap: 24px;
+}
+.slider-img {
+    width: 340px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #eee;
+}
+.slider-btn {
+    background: #fff;
+    border: none;
+    font-size: 2.5rem;
+    color: #888;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: background 0.2s, color 0.2s;
+}
+.slider-btn-left { left: 0; }
+.slider-btn-right { right: 0; }
+.slider-btn:hover { background: #4EE18E; color: #fff; }
+@media (max-width: 900px) {
+    .slider-img { width: 220px; height: 140px; }
+    .slider-container { max-width: 98vw; }
+}
+@media (max-width: 600px) {
+    .slider-img { width: 140px; height: 90px; }
+    .highlights-title { font-size: 1.2rem; }
+}
+
+.sliderku img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.slick-arrow {
+    display: flex !important;
+}
+.slick-arrow:before {
+    color: #888;
+    font-size: 2.5rem;
+}
+.slick-dots li button:before {
+    color: #888;
+    font-size: 1.2rem;
+}
+.slick-center img {
+    /* border: 3px solid #4EE18E; */
+}
+
+.slide-arrow {
+    background: #fff !important;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-arrow svg {
+    width: 28px;
+    height: 28px;
+    color: #888;
+}
+.slide-arrow.prev-arrow {
+    left: 420px;
+    margin-left: 0;
+}
+.slide-arrow.next-arrow {
+    right: 420px;
+    margin-right: 0;
+}
+.slide-arrow.slick-arrow {
+    display: flex !important;
+}
+
+/* Slick Carousel SVG Styles */
+.slide-arrow svg {
+    width: 28px;
+    height: 28px;
+    color: #888;
+}
+
+.slide-arrow svg path {
+    fill: currentColor;
+}
+
+/* Slick Carousel Button Styles */
+.slide-arrow.prev-arrow,
+.slide-arrow.next-arrow {
+    background: rgba(255,255,255,0.85) !important;
+    /* Tambahkan border dan shadow agar tombol lebih jelas */
+    border: 1.5px solid #bdbdbd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: background 0.2s, color 0.2s;
+}
+
+.slide-arrow.prev-arrow:hover,
+.slide-arrow.next-arrow:hover {
+    background: #4EE18E !important;
+    color: #fff;
+}
+
+/* Slick Carousel SVG Icon Styles */
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.svg-inline--fa.fa-w-6 {
+    width: .375em;
+}
+
+.svg-inline--fa.fa-3x {
+    font-size: 3em;
+}
+
+/* Tambahan style untuk container slider */
+.sliderku {
+    position: relative;
+    padding: 0;
+}
+
+.sliderku .slick-list {
+    margin: 0 -12px;
+}
+
+.sliderku .slick-slide {
+    padding: 0 12px !important;
+}
+
+/* Responsive styles untuk tombol slider */
+@media (max-width: 900px) {
+    .slide-arrow.prev-arrow {
+        left: -12px;
+    }
+    .slide-arrow.next-arrow {
+        right: -12px;
+    }
+    .sliderku {
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slide-arrow.prev-arrow {
+        left: -8px;
+    }
+    .slide-arrow.next-arrow {
+        right: -8px;
+    }
+    .sliderku {
+        padding: 0 8px;
+    }
+}
+
+.slide-arrow.prev-arrow,
+.slide-arrow.next-arrow {
+    width: 32px;
+    height: 32px;
+}
+.slide-arrow svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Contact Us Flex Layout */
+.contactus-flex {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 40px 0 0 0;
+}
+.contactus-form {
+    flex: 2;
+    min-width: 320px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.contactus-form label {
+    margin-bottom: 4px;
+    font-size: 1em;
+    color: #444;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+.contactus-form input,
+.contactus-form textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.contactus-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.contactus-form button[type="submit"] {
+    background: #c94a6a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 8px;
+    align-self: flex-start;
+    transition: background 0.2s;
+}
+.contactus-form button[type="submit"]:hover {
+    background: #a03a54;
+}
+.contact-address-box {
+    background: #f5f5f5;
+    flex: 1;
+    min-width: 260px;
+    max-width: 340px;
+    padding: 24px 20px;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #444;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    box-sizing: border-box;
+}
+@media (max-width: 900px) {
+    .contactus-flex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+    }
+    .contact-address-box {
+        max-width: 100%;
+        margin-top: 12px;
+    }
+    .contactus-form {
+        max-width: 100%;
+    }
+}
+
+.sliderku-portrait img {
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #eee;
+    margin: 0 auto;
+    display: block;
+}
+@media (max-width: 900px) {
+    .sliderku-portrait img {
+        width: 120px;
+        height: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .sliderku-portrait img {
+        width: 80px;
+        height: 120px;
+    }
+}
+
+.footer-copyright a {
+    color: #666;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.2s;
+}
+.footer-copyright a:hover {
+    color: #432885;
+}
+
+.IMG_0665 img {
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #eee;
+    margin: 0 auto;
+    display: block;
+}
+@media (max-width: 900px) {
+    .IMG_0665 img {
+        width: 120px;
+        height: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .IMG_0665 img {
+        width: 80px;
+        height: 120px;
+    }
+}
+
+.IMG_0665 .slick-slide {
+    padding: 0 2px !important;
+}
+
+.modal-slider-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+.modal-slider-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 16px 16px 16px;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-slider-close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 2.2rem;
+    color: #c94a6a;
+    cursor: pointer;
+    z-index: 10;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.modal-slider-close:hover {
+    color: #800040;
+}
+.modal-slider img {
+    max-width: 60vw;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    background: #eee;
+}
+@media (max-width: 900px) {
+    .modal-slider-content {
+        max-width: 98vw;
+        max-height: 98vh;
+        padding: 10px 2vw 10px 2vw;
+    }
+    .modal-slider img {
+        max-width: 90vw;
+        max-height: 60vh;
+    }
+}
+
+.modal-slider {
+    width: 100%;
+    min-width: 200px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-slider .slide-arrow,
+.modal-slider .slick-arrow {
+    display: none !important;
+}
+
+.modal-slider .slide-arrow svg,
+.modal-slider .slick-arrow svg {
+    color: #4EE18E !important;
+}
+
+.modal-slider .slide-arrow:hover,
+.modal-slider .slick-arrow:hover {
+    background: transparent !important;
+    color: #222 !important;
+}
+
+.modal-slider .slide-arrow.prev-arrow,
+.modal-slider .slick-arrow.prev-arrow {
+    left: 50px !important;
+    right: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+.modal-slider .slide-arrow.next-arrow,
+.modal-slider .slick-arrow.next-arrow {
+    right: 50px !important;
+    left: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+/* Alasan Memilih Team Kami */
+.alasan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    align-items: flex-start;
+}
+.alasan-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 28px 18px 22px 18px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.alasan-item:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    transform: translateY(-4px) scale(1.03);
+}
+.alasan-icon {
+    font-size: 3.2rem;
+    margin-bottom: 18px;
+    color: #c94a6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+}
+.alasan-judul {
+    font-size: 1.18rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+.alasan-desc {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    line-height: 1.6;
+}
+@media (max-width: 1000px) {
+    .alasan-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .alasan-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .alasan-item {
+        padding: 18px 8px 16px 8px;
+    }
+    .alasan-icon {
+        font-size: 2.2rem;
+        height: 40px;
+    }
+}

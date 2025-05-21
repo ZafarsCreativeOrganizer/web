@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricelist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="Landingpage.html">Home</a>
+        <a href="pricelist.html">Pricelist</a>
+        <a href="contact.html">Contact</a>
+        <a href="aboutus.html">About Us</a>
+    </nav>
+    <div class="hero">
+        <div class="logo">
+            <a href="Landingpage.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <img src="logo.png" alt="Logo">
+                Zafars Creative Organizer
+            </a>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Pricelist</h1>
+        </div>
+    </div>
+    <hr>
+    <section class="highlights-section">
+        <h2 class="highlights-title">Prewedding Catalogue</h2>
+        <div class="sliderku IMG_0665">
+            <div>
+                <img src="foto4/1.jpg" alt="Prewedding 1" onclick="openModalSlider(0,3)">
+            </div>
+            <div>
+                <img src="foto4/2.jpg" alt="Prewedding 2" onclick="openModalSlider(1,3)">
+            </div>
+            <div>
+                <img src="foto4/3.jpg" alt="Prewedding 3" onclick="openModalSlider(2,3)">
+            </div>
+            <div>
+                <img src="foto4/4.jpg" alt="Prewedding 4" onclick="openModalSlider(3,3)">
+            </div>
+            <div>
+                <img src="foto4/5.jpg" alt="Prewedding 5" onclick="openModalSlider(4,3)">
+            </div>
+            <div>
+                <img src="foto4/6.jpg" alt="Prewedding 6" onclick="openModalSlider(5,3)">
+            </div>
+            <div>
+                <img src="foto4/7.jpg" alt="Prewedding 7" onclick="openModalSlider(6,3)">
+            </div>
+            <div>
+                <img src="foto4/8.jpg" alt="Prewedding 8" onclick="openModalSlider(7,3)">
+            </div>
+        </div>
+    </section>
+    <footer class="footer-main">
+        <div class="footer-top">
+            <div class="footer-social-title">FOLLOW US ON</div>
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/zafars.co/" target="_blank" class="footer-icon"><img src="ig.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@zafarscreativeorganizer?_t=ZS-8wVJtedbTfe&_r=1" target="_blank" class="footer-icon"><img src="tiktok.png" alt="TikTok"></a>
+            </div>
+            <div class="footer-desc">
+                Zafars Company is an organization that operates in the field of services and product providers, including: Visual Documentation, Vacation Travel, Online game service providers, Graphic design, Fashion, As well as air freshener products, Zafars Company covers areas namely, Bali, Surabaya and Area Jabodetabek, wherever you need our services or products, the Zafars Team will always be ready to provide the best services and products with our quality.
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © 2024-2025 ZAFARS.CO | <a href="aboutus.html">ABOUT US</a> | <a href="contact.html">CONTACT US</a>
+            </div>
+            <div class="footer-policy">
+                <a href="#">PRIVACY POLICY</a> | <a href="#">TERM OF USE</a>
+            </div>
+        </div>
+        <div class="footer-chat">
+            <a href="https://wa.me/6285338000326" target="_blank"><img src="wa.png" alt="Chat With Us"></a>
+        </div>
+    </footer>
+    <div id="modalSlider" class="modal-slider-bg" style="display:none;">
+        <div class="modal-slider-content">
+            <span class="modal-slider-close" onclick="closeModalSlider()">&times;</span>
+            <div class="modal-slider"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
