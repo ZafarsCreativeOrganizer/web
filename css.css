@@ -1226,3 +1226,26 @@ button, .contactus-form button[type="submit"] {
     font-family: 'Century Gothic', Arial, sans-serif !important;
     font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+  .bottom-nav {
+    display: flex !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+    border-top: 1px solid #eee;
+    height: 56px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .bottom-nav {
+    display: none !important;
+  }
+}
