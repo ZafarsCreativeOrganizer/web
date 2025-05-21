@@ -1268,19 +1268,41 @@ button, .contactus-form button[type="submit"] {
 
 @media (max-width: 1024px) {
   .bottom-nav {
+    height: 68px !important;
+    background: #fff !important;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.08) !important;
+    border-top: 1.5px solid #eee !important;
     display: flex !important;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    background: #fff;
-    box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
-    border-top: 1px solid #eee;
-    height: 56px;
-    justify-content: space-around;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding: 0 !important;
+    z-index: 9999 !important;
+  }
+  .bottom-nav-item {
+    flex: 1 1 0;
+    text-align: center;
+    color: #444;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0;
+    justify-content: center;
+    padding: 8px 0 4px 0;
+    gap: 2px;
+    transition: color 0.2s;
+  }
+  .bottom-nav-icon {
+    font-size: 1.7em !important;
+    line-height: 1;
+    margin-bottom: 2px;
+    display: block;
+  }
+  .bottom-nav-label {
+    font-size: 0.95em !important;
+    font-weight: 500 !important;
+    display: block;
+    margin-top: 0;
   }
 }
 @media (min-width: 1025px) {
