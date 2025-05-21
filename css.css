@@ -1234,6 +1234,9 @@ hr {
     bottom: 110px !important;
     right: 16px !important;
   }
+  .footer-main {
+    padding-bottom: 100px !important;
+  }
 }
 @media (min-width: 1025px) {
   .slide-arrow,
@@ -1268,7 +1271,7 @@ button, .contactus-form button[type="submit"] {
 
 @media (max-width: 1024px) {
   .bottom-nav {
-    height: 68px !important;
+    height: 100px !important;
     min-height: 68px !important;
     background: #fff !important;
     box-shadow: 0 -2px 12px rgba(0,0,0,0.08) !important;
@@ -1296,7 +1299,7 @@ button, .contactus-form button[type="submit"] {
   .bottom-nav-icon {
     font-size: 2em !important;
     line-height: 1 !important;
-    margin-bottom: 2px !important;
+    margin-bottom: 5px !important;
     display: block !important;
   }
   .bottom-nav-label {
