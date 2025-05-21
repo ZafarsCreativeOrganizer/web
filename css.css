@@ -1269,6 +1269,7 @@ button, .contactus-form button[type="submit"] {
 @media (max-width: 1024px) {
   .bottom-nav {
     height: 68px !important;
+    min-height: 68px !important;
     background: #fff !important;
     box-shadow: 0 -2px 12px rgba(0,0,0,0.08) !important;
     border-top: 1.5px solid #eee !important;
@@ -1279,30 +1280,30 @@ button, .contactus-form button[type="submit"] {
     z-index: 9999 !important;
   }
   .bottom-nav-item {
-    flex: 1 1 0;
-    text-align: center;
-    color: #444;
-    text-decoration: none;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 0 4px 0;
-    gap: 2px;
-    transition: color 0.2s;
+    flex: 1 1 0 !important;
+    text-align: center !important;
+    color: #444 !important;
+    text-decoration: none !important;
+    font-size: 1em !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 0 4px 0 !important;
+    gap: 2px !important;
+    transition: color 0.2s !important;
   }
   .bottom-nav-icon {
-    font-size: 1.7em !important;
-    line-height: 1;
-    margin-bottom: 2px;
-    display: block;
+    font-size: 2em !important;
+    line-height: 1 !important;
+    margin-bottom: 2px !important;
+    display: block !important;
   }
   .bottom-nav-label {
-    font-size: 0.95em !important;
-    font-weight: 500 !important;
-    display: block;
-    margin-top: 0;
+    font-size: 1.05em !important;
+    font-weight: 600 !important;
+    display: block !important;
+    margin-top: 0 !important;
   }
 }
 @media (min-width: 1025px) {
