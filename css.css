@@ -42,7 +42,7 @@ body, html {
     letter-spacing: 1px;
     color: #efd289 !important;
 }
-nav {
+#navbar {
     position: fixed;
     top: 0;
     right: 0.2px;
@@ -55,11 +55,11 @@ nav {
     justify-content: flex-end;
     gap: 10px;
 }
-nav.scrolled {
+#navbar.scrolled {
     background: #222;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-nav a {
+#navbar a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
@@ -68,11 +68,11 @@ nav a {
     font-weight: normal;
     transition: color 0.2s;
 }
-nav.scrolled a {
+#navbar.scrolled a {
     color: #fff;
 }
-nav a:hover,
-nav.scrolled a:hover {
+#navbar a:hover,
+#navbar.scrolled a:hover {
     color: #4EE18E;
     font-weight: bold;
 }
@@ -125,7 +125,7 @@ hr {
 @media (max-width: 700px) {
     .hero-title { font-size: 2rem; }
     .hero-subtitle { font-size: 1rem; }
-    nav {
+    #navbar {
         padding: 8px 0;
     }
     .logo { left: 10px; }
@@ -563,7 +563,7 @@ hr {
         margin: 0 !important;
         overflow-x: hidden !important;
     }
-    nav {
+    #navbar {
         padding: 8px 0 !important;
         font-size: 1em !important;
         flex-direction: column !important;
